@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText_operando1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/introduzca_el_operador1"
+        android:autofillHints="@string/introduzca_el_operador2"
+        android:nextFocusDown="@+id/editText_operando2"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText_operando2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/introduzca_el_operador2"
+        android:inputType="number"
+        android:layout_below="@id/editText_operando1"
+        android:nextFocusDown="@+id/spinner"
+        android:autofillHints="@string/introduzca_el_operador2" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        android:layout_below="@id/editText_operando2"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/operar"
+        android:textSize="@dimen/letra_mediana"
+        android:enabled="false"
+        android:layout_below="@id/spinner"/>
+
+
+</RelativeLayout>

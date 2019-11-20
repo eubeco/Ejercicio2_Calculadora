@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ejercicio2_Calculadora</string>
+    <string name="operar">OPERAR</string>
+    <string name="resultado">Resultado</string>
+    <string name="introduzca_el_operador2">Introduzca el operador2</string>
+    <string name="introduzca_el_operador1">Introduzca el operador1</string>
+</resources>
